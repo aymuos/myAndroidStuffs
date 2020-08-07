@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgMain"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/aymuos1"
+        />
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soumya Mukherjee"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_toRightOf="@id/imgMain"
+        />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aymuosmukherjee@gmail.com"
+        android:textSize="18sp"
+        android:textStyle="bold
+"/>
+    <TextView
+        android:id="@+id/txtPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="818861656"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMoreInfo"
+        android:background="#156529"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_below="@+id/imgMain"
+
+
+        />
+
+
+</RelativeLayout>

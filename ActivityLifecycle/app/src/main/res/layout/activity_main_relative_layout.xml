@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/aymuos1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+       android:layout_gravity="center"
+        android:layout_centerInParent="true"
+
+
+        android:src="@drawable/aymuos1"/>
+
+
+    <TextView
+        android:id="@+id/txtLayoutHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+        android:padding="8dp"
+        android:text="Hello World!"
+        android:textColor="#0d47a1"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtLayOutSubHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@id/txtLayoutHeader"
+        android:text="Android dev is fun"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="italic" />
+    <Button
+        android:id="@+id/btnClickHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Click Here"
+        android:layout_alignParentBottom="true"
+        android:background="#078955"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLayOutSubHeader"
+        android:hint="Enter your name"
+        android:layout_margin="20dp"
+        android:inputType="textPassword"/>
+
+
+</RelativeLayout>

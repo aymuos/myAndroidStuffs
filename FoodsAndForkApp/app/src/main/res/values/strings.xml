@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Foods And Fork</string>
+    <string name="welcome_to_the_app">Welcome</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="enter_your_email2">Enter Your Email</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="login">LOGIN</string>
+    <string name="enter_the_credentials_to_continue">Enter the credentials to continue</string>
+    <string name="forgot_your_password_click_here_to_reset_it">Forgot Your Password? Click here to reset It</string>
+</resources>

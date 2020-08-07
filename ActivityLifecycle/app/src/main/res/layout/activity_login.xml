@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".loginActivity">
+    
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:id="@+id/imgLogo"
+        android:src="@drawable/avengers_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/etMobNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginRight="15dp"
+        android:hint="@string/enter_phone_number"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:padding="6dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="15dp"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="6dp" />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="56dp"
+        android:background="@color/myColor2"
+        android:text="@string/butn_login_text"
+        android:layout_margin="25dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGo"
+        android:paddingBottom="25dp"
+        android:text="@string/register_instead"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/myColor4"
+        android:textStyle="bold"
+        android:id="@+id/txtRegister"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="25dp"
+        android:text="@string/frgt_psswd_text"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/myColor3"
+        android:textStyle="bold"
+        android:id="@+id/txtForgotPass"/>
+
+
+
+
+</RelativeLayout>
