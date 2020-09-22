@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Food Runners</string>
+    <string name="my_pref">My Preference</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="faq_answer_one">A.1 Food Runners is a mobile application with a sole objective of empowering small businesses, local food outlets and other businesses with a tool that enables them to reach customers with a few taps on the screen.
+    </string>
+    <string name="faq_answer_two">A.2 No, for now it is just a prototype of a food delivering app(i.e.,just a food ordering app). In near future, we would like to tie up with a restaurant, cafe or a local food outlet to convert it into an actual food ordering app.
+    </string>
+    <string name="faq_answer_three">A.3 For the convenience of its users, Food Runners has Cash On Delivery as the only payment option.
+    </string>
+    <string name="faq_answer_four">A.4 Sorry for the issues. Please mail your issues at the mail ID given below</string>
+
+    <string name="dummy_phone">+91-1234567890</string>
+    <string name="register_now"><u>Don\'t have an account? Register now</u></string>
+    <string name="developer_contact"><u>Developer Contact:</u></string>
+    <string name="details">Name: Ayushi Gupta \nEmail: ayushiash1412@gmail.com \nLinkedIn: https://www.linkedin.com/in/ayushiash14122000</string>
+    <string name="forgot_password"><u>Forgot Password</u></string>
+</resources>

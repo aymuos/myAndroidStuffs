@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="4dp">
+
+
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llContent"
     android:layout_width="match_parent"
     android:layout_height="140dp"
     android:orientation="horizontal"
@@ -21,7 +31,8 @@
         android:layout_width="0dp"
         android:layout_height="110dp"
         android:src="@mipmap/ic_launcher"
-        android:padding="5dp"/>
+        android:padding="5dp"
+        android:scaleType="centerCrop"/>
 
     <RelativeLayout
         android:layout_weight="3.3"
@@ -79,3 +90,4 @@
     </TextView>
 
 </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -10,10 +10,10 @@
         android:roundIcon="@mipmap/just_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegistrationActivity"></activity>
-        <activity android:name=".LogInActivity" />
+        <activity android:name=".activity.RegistrationActivity"></activity>
+        <activity android:name=".activity.LogInActivity" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".activity.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar"
             tools:ignore="ExtraText">
             <intent-filter>

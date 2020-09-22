@@ -1,99 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LogInActivity"
     android:orientation="vertical"
-    tools:background="#fffde7">
+    tools:context=".activity.LogInActivity"
+    android:background="@color/colorPrimary">
 
     <ImageView
-        android:id="@+id/imgLogoOnly"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:src="@drawable/just_logo"
-        android:textAlignment="center"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/enter_the_credentials_to_continue"
-        android:layout_below="@+id/imgLogoOnly"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-
-        />
-
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/just_logo"/>
 
     <EditText
-        android:id="@+id/etEmailInput"
-        android:layout_width="383dp"
-        android:layout_height="37dp"
-        android:layout_below="@+id/imgLogoOnly"
-        android:layout_marginStart="15dp"
+        android:id="@+id/etMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="15dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="15dp"
-        android:height="25dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/mobile_number"
+        android:inputType="number"
         android:background="#ffffff"
-        android:hint="@string/enter_your_email2"
+        android:maxLength="10"
+        android:drawablePadding="3dp"
         android:maxLines="1"
-        android:padding="6dp" />
+        android:padding="10dp"/>
 
     <EditText
-        android:id="@+id/etPasswrd"
+        android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etEmailInput"
-        android:layout_marginStart="15dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="15dp"
         android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/password"
+        android:inputType="numberPassword"
         android:maxLength="6"
-        android:layout_marginBottom="15dp"
-        android:height="25dp"
         android:background="#ffffff"
-        android:hint="@string/enter_your_password"
-        android:inputType="textPassword"
         android:maxLines="1"
-        android:padding="6dp" />
+        android:drawablePadding="3dp"
+        android:padding="10dp"/>
 
     <Button
-        android:id="@+id/btnLoginMain"
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="75dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorNavy"
         android:text="@string/login"
-        android:background="#000000"
-        android:textColor="#fffddd"
-        android:textSize="16sp"
-        android:layout_below="@+id/etPasswrd"
-        android:shadowColor="#000000"
-        />
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"/>
 
     <TextView
-        android:id="@+id/txt3"
-        android:layout_width="match_parent"
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnLoginMain"
-        android:layout_marginTop="35dp"
-        android:gravity="center_horizontal"
-        android:text="@string/forgot_your_password_click_here_to_reset_it" />
+        android:text="@string/forgot_password"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:layout_gravity="center"/>
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txt3"
-        android:gravity="center_horizontal"
-        android:text="Register Yourself"
-        android:id="@+id/txt4"
-        android:layout_alignParentBottom="true"
-        android:textStyle="bold"/>
+        android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/txtRegisterYourself"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:focusable="true"
+            android:textAllCaps="false"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:text="@string/register_yourself"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"/>
 
-</RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

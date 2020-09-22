@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aymuos.foodandfork">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/food_runners_icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:resizeableActivity="false"
+        android:roundIcon="@mipmap/food_runners_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.aymuos.foodandfork.activity.OrderActivity"></activity>
+        <activity android:name="com.aymuos.foodandfork.activity.CartActivity" />
+        <activity android:name="com.aymuos.foodandfork.activity.ResetActivity" />
+        <activity android:name="com.aymuos.foodandfork.activity.DetailActivity" />
+        <activity
+            android:name="com.aymuos.foodandfork.activity.HomeActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.aymuos.foodandfork.activity.RegisterActivity" />
+        <activity android:name="com.aymuos.foodandfork.activity.ForgotPasswordActivity" />
+        <activity android:name="com.aymuos.foodandfork.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.aymuos.foodandfork.activity.LoginActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HistoryFragment">
+    <RelativeLayout
+        android:id="@+id/rlNoOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-56dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgEmptyOrder"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/filled_fav" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgEmptyOrder"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="@string/you_haven_t_added_any_favourite_restaurants"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlOrder">
+
+            <TextView
+                android:id="@+id/txtOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your previous orders are listed below"
+                android:gravity="center"
+                android:layout_marginTop="65dp"
+                android:textSize="17sp"
+                android:textStyle="italic"
+                android:layout_marginStart="10dp"/>
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/txtOrder"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/txtResName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="65dp"
+                android:layout_toEndOf="@id/viewLine"
+                android:layout_marginStart="10dp"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_below="@id/txtResName"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/recyclerView"
+                android:padding="10dp"/>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/coordinateLayout">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                    app:elevation="0dp">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="?attr/actionBarSize"
+                        android:background="@color/colorPrimary"
+                        app:layout_scrollFlags="scroll|enterAlways"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <Button
+                android:id="@+id/btnOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_alignParentBottom="true"
+                android:text="Place Order"
+                android:padding="5dp"
+                android:paddingBottom="5dp"
+
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/progressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+
+
+</FrameLayout>

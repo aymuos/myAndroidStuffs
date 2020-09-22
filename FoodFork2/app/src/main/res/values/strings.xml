@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Foods And Fork</string>
+    <string name="my_pref">My Preference</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="faq_answer_one">A.1 Foods And Fork is a demonstration of an online food ordering app. Users can order food from food outlets listed in the app page
+    </string>
+    <string name="faq_answer_two">A.2 No, for now it is just a prototype of a food delivering app(i.e.,just a food ordering app). In near future, we would like to tie up with a restaurant, cafe or a local food outlet to convert it into an actual food ordering app.
+    </string>
+    <string name="faq_answer_three">A.3 At present, FoodAndFork has Cash On Delivery as the only payment option.
+    </string>
+    <string name="faq_answer_four">A.4 Sorry for the issues. Please contact via telegram to resolve your issues</string>
+
+    <string name="dummy_phone">+91-1234567890</string>
+    <string name="register_now"><u>Don\'t have an account? Register now</u></string>
+    <string name="developer_contact"><u>Developer Contact:</u></string>
+    <string name="details">Name: Soumya Mukherjee \nTelegram:@aymuos1 </string>
+    <string name="forgot_password"><u>Forgot Password</u></string>
+    <string name="password">Password</string>
+    <string name="log_in">LOG IN</string>
+    <string name="input_reeceived_otp_and_new_password">Input received OTP and new Password</string>
+    <string name="enter_your_otp_4_characters">Enter your OTP (4 characters)</string>
+    <string name="submit">Change Password</string>
+    <string name="yay_your_order_has_been_placed_successfully">Yay! Your Order has been placed successfully !!</string>
+
+    <string name="letscontinue">CONTINUE</string>
+    <string name="enter_delivery_address">Enter Delivery Address</string>
+    <string name="enter_your_mobile_number_10_digits">Enter your Mobile Number (10 digits)</string>
+    <string name="enter_your_email_address">Enter your Email Address</string>
+    <string name="enter_password_min_4_characters">Enter Password (Min. 4 characters)</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="q_1_what_is_this_app_about">Q.1 What is this app about?</string>
+    <string name="q_2_is_this_a_food_delivery_app">Q.2 Is this a food delivery app?</string>
+    <string name="q_3_elaborate_on_the_payment_options_available_on_food_and_fork">Q.3 Elaborate on the payment options available on Food And Fork?</string>
+    <string name="q_4_i_found_some_bugs_in_the_app_where_do_i_report">Q.4 I found some bugs in the app. Where do I report?</string>
+    <string name="azd">Does this require internet to work?</string>
+    <string name="internetans">Yes, this requires internet to interact with the server to fetch results</string>
+    <string name="you_haven_t_added_any_favourite_restaurants">You haven\'t added any favourite restaurants</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="add_item">ADD ITEM</string>
+    <string name="enter_name_min_3_characters">Enter Name (Min. 3 characters)</string>
+    <string name="enter_your_registered_mobile_number_and_email_to_reset_your_password_for_this_app">Enter your registered Mobile Number and Email to reset your password for this app:</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="_14_12_2000">14/12/2000</string>
+    <string name="check_the_following_items">Check the following items</string>
+</resources>

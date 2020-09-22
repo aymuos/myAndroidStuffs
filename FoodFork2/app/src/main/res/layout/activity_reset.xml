@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/myColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ResetActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:src="@drawable/foodfork_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="35dp"/>
+
+    <TextView
+        android:id="@+id/txtInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="16dp"
+        android:paddingBottom="6dp"
+        android:text="@string/input_reeceived_otp_and_new_password"/>
+
+
+    <EditText
+        android:id="@+id/etOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInstructions"
+        android:background="#ffffff"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:maxLines="1"
+        android:drawableLeft="@drawable/ic_otp"
+        android:drawableStart="@drawable/ic_otp"
+        android:drawablePadding="5dp"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/enter_your_otp_4_characters"/>
+
+    <EditText
+        android:id="@+id/etNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etOTP"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:background="#ffffff"
+        android:layout_marginRight="25dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="5dp"
+        android:layout_marginBottom="16dp"
+        android:maxLines="1"
+        android:inputType="numberPassword"
+        android:hint="New Password (Minimum 6 Digits)"/>
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNewPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:background="#ffffff"
+        android:layout_marginRight="25dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="5dp"
+        android:maxLines="1"
+        android:layout_marginBottom="16dp"
+        android:inputType="numberPassword"
+        android:hint="Confirm Password"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etConfirmPassword"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="25dp"
+        android:background="@color/myColGrey"
+        android:text="@string/submit"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

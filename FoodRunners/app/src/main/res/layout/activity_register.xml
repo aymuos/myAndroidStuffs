@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myColor"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"/>
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@drawable/foodrunner_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/toolbar"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgLogo"
+                android:layout_marginLeft="12dip"
+                android:background="#ffffff"
+                android:layout_marginRight="12dip"
+                android:hint="Name (Min. 3 characters)"
+                android:padding="10dip"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawableStart="@drawable/ic_name"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etName"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="5dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="6dip"
+                android:layout_marginRight="12dip"
+                android:maxLines="1"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="10dip"
+                android:singleLine="true"
+                android:textSize="16sp"/>
+
+
+            <EditText
+                android:id="@+id/etRegisterMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_below="@id/etDeliveryAdd"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="6dip"
+                android:layout_marginRight="12dip"
+                android:maxLength="10"
+                android:drawableLeft="@drawable/ic_mobile"
+                android:drawableStart="@drawable/ic_mobile"
+                android:drawablePadding="5dp"
+                android:maxLines="1"
+                android:hint="Mobile Number (10 digits)"
+                android:inputType="phone"
+                android:padding="10dip"
+                android:singleLine="true"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/etDeliveryAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_below="@id/etEmail"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="6dip"
+                android:layout_marginRight="12dip"
+                android:gravity="top"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="5dp"
+                android:hint="Delivery Address"
+                android:padding="10dip"
+                android:singleLine="true"
+                android:textSize="16sp"/>
+
+
+            <EditText
+                android:id="@+id/etRegisterPassword"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etRegisterMobileNumber"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="6dip"
+                android:layout_marginRight="12dip"
+                android:hint="Password (Min. 4 characters)"
+                android:inputType="numberPassword"
+                android:padding="10dip"
+                android:maxLength="6"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_below="@+id/etRegisterPassword"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="6dip"
+                android:layout_marginRight="12dip"
+                android:hint="Confirm Password"
+                android:inputType="numberPassword"
+                android:padding="10dip"
+                android:singleLine="true"
+                android:maxLength="6"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="5dp"
+                android:textSize="16sp"/>
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etConfirmPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="40dip"
+                android:layout_marginRight="12dip"
+                android:background="@color/colorPrimary"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"/>
+        </RelativeLayout>

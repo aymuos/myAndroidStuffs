@@ -7,4 +7,9 @@
     <string name="login">LOGIN</string>
     <string name="enter_the_credentials_to_continue">Enter the credentials to continue</string>
     <string name="forgot_your_password_click_here_to_reset_it">Forgot Your Password? Click here to reset It</string>
+    <string name="enter_your_mobilenumber">Enter your Mobile Number</string>
+    <string name="mobile_number">Enter Your mobile Number</string>
+    <string name="password">Enter Your Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="register_yourself">Register For a new account</string>
 </resources>
